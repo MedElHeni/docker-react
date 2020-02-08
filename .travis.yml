@@ -4,7 +4,7 @@ services:
 before_install:
     - docker build -t meh/docker-react -f Dockerfile.dev .
 script:
-    - docker run  meh/docker-react 
+    - docker -v 
 deploy:
     provider: elasticbeanstalk
     region: "eu-west-2"
